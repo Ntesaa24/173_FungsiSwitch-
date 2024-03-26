@@ -1,5 +1,7 @@
 #include <iostream>
 using namespace std; 
 
-int luas; 
+int bilangan1, bilangan2; 
 
+
+}
