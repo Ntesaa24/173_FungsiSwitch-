@@ -31,15 +31,22 @@ void inputData()
 int main()
 {
 			int pilihan; 
-			do{
-				system("CLS"); 
-				cout << "Menu Kalkulator sederhana" << endl; 
-				cout << "1. Penjumlahan" << endl; 
-				cout << "2. Pengurangan" << endl; 
-				cout << "3. Perkalian" << endl; 
-				cout << "4. Pembagian" << endl; 
-				cout << "5. keluar" << endl; 
-				cout << "Masukan pilihan: "; 
-				cin >> pilihan; 
+			do {
+				system("CLS");
+				cout << "Menu Kalkulator sederhana" << endl;
+				cout << "1. Penjumlahan" << endl;
+				cout << "2. Pengurangan" << endl;
+				cout << "3. Perkalian" << endl;
+				cout << "4. Pembagian" << endl;
+				cout << "5. keluar" << endl;
+				cout << "Masukan pilihan: ";
+				cin >> pilihan;
 
-int main()
+				switch (pilihan)
+				{
+				case 1:
+					inputData();
+					cout << "\nHasil penjumlahan: " << penjumlahan(bilangan1, bilangan2) << endl;
+					system("pause");
+					break;
+
