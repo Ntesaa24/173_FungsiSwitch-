@@ -20,13 +20,17 @@ float pembagian(float a, float b)
 	return a / b; 
 }
 
-void inputData() 
+void inputData()
 {
-	cout << "\nMasukan bilangan pertama: ";  
-	cin >> bilangan1; 
+	cout << "\nMasukan bilangan pertama: ";
+	cin >> bilangan1;
 	cout << "Masukan bilangan kedua: ";
-	cin >> bilangan2; 
-	{
+	cin >> bilangan2;
+} 
 
-	}
-}
+int main()
+{
+			int pilihan; 
+			do{
+				system("CLS"); 
+				cout << "Menu Kalkulator sederhana" << endl; 
