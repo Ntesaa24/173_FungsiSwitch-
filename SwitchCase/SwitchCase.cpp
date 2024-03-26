@@ -30,23 +30,48 @@ void inputData()
 
 int main()
 {
-			int pilihan; 
-			do {
-				system("CLS");
-				cout << "Menu Kalkulator sederhana" << endl;
-				cout << "1. Penjumlahan" << endl;
-				cout << "2. Pengurangan" << endl;
-				cout << "3. Perkalian" << endl;
-				cout << "4. Pembagian" << endl;
-				cout << "5. keluar" << endl;
-				cout << "Masukan pilihan: ";
-				cin >> pilihan;
+	int pilihan;
+	do {
+		system("CLS");
+		cout << "Menu Kalkulator sederhana" << endl;
+		cout << "1. Penjumlahan" << endl;
+		cout << "2. Pengurangan" << endl;
+		cout << "3. Perkalian" << endl;
+		cout << "4. Pembagian" << endl;
+		cout << "5. keluar" << endl;
+		cout << "Masukan pilihan: ";
+		cin >> pilihan;
 
-				switch (pilihan)
-				{
-				case 1:
-					inputData();
-					cout << "\nHasil penjumlahan: " << penjumlahan(bilangan1, bilangan2) << endl;
-					system("pause");
-					break;
+		switch (pilihan)
+		{
+		case 1:
+			inputData();
+			cout << "\nHasil penjumlahan: " << penjumlahan(bilangan1, bilangan2) << endl;
+			system("pause");
+			break;
+		case 2:
+			inputData();
+			cout << "\nHasil pengurangan: " << pengurangan(bilangan1, bilangan2) << endl;
+			system("pause");
+			break;
+		case 3:
+			inputData;
+			cout << "\nHasil perkalian: " << perkalian(bilangan1, bilangan2) << endl;
+			break;
+		case 4:
+			inputData();
+			cout  << "\nHasil pembagian: " << pembagian(bilangan1, bilangan2) << endl;
+			system("pause");
+			break;
+		case 5:
+			break;
+		default:
+			cout << "pilihan tidak valid" << endl;
+			system("pause");
+			break;
+		}
 
+	} while (pilihan != 5); //!= adalah tidak sama dengan. 
+
+	return 0;
+}
